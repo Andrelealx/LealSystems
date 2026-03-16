@@ -19,7 +19,7 @@ export function Navbar({ contactEmail, theme, onToggleTheme }: NavbarProps) {
     <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/85 backdrop-blur-xl dark:border-white/10 dark:bg-[#050A16]/85">
       <Container className="flex h-20 items-center justify-between gap-4">
         <Link to="/" aria-label="Leal Systems" className="inline-flex items-center" onClick={() => setMobileOpen(false)}>
-          <BrandLogo theme={theme} symbolClassName="h-8 w-auto sm:h-9" />
+          <BrandLogo theme={theme} logoClassName="h-9 w-auto sm:h-10" />
         </Link>
 
         <nav className="hidden lg:block" aria-label="Seções principais">
@@ -72,7 +72,10 @@ export function Navbar({ contactEmail, theme, onToggleTheme }: NavbarProps) {
 
       {mobileOpen ? (
         <Container className="pb-4 lg:hidden">
-          <nav aria-label="Navegação mobile" className="rounded-2xl border border-slate-200 bg-white/95 p-3 dark:border-white/15 dark:bg-slate-900/95">
+          <nav
+            aria-label="Navegação mobile"
+            className="rounded-2xl border border-slate-200 bg-white/95 p-3 dark:border-white/15 dark:bg-slate-900/95"
+          >
             <ul className="space-y-1.5">
               {navigation.map((item) => (
                 <li key={item.path}>
