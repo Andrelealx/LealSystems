@@ -16,7 +16,7 @@ export function Footer({ contactEmail, appUrl, theme }: FooterProps) {
       <Container>
         <div className="grid gap-10 lg:grid-cols-[1.15fr_0.85fr]">
           <div>
-            <BrandLogo theme={theme} logoClassName="h-10 w-auto" />
+            <BrandLogo theme={theme} logoClassName="h-11 w-auto" />
             <p className="mt-4 max-w-lg font-body text-sm leading-relaxed text-slate-600 dark:text-slate-300">
               {company.description}
             </p>

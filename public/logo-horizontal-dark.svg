@@ -1,9 +1,10 @@
-<svg width="760" height="120" viewBox="0 0 760 120" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Leal Systems">
-  <g transform="translate(16,16)">
+<svg width="820" height="140" viewBox="0 0 820 140" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Leal Systems">
+  <g transform="translate(18,18) scale(1.15)">
     <path d="M25.8 8 0 62h50.4l12.6-24.6H40.2L55.8 8H25.8Z" fill="#1874FA" />
     <path d="M57.4 8H118l-12.2 25.6H82.6l-5.2 11h34.8L95.2 86H70l12-24H43l14.4-30.4L57.4 8Z" fill="#1874FA" />
   </g>
-  <text x="160" y="76" font-family="Outfit, Arial, sans-serif" font-size="64" letter-spacing="0" fill="#FFFFFF">
+
+  <text x="202" y="92" font-family="Outfit, Arial, sans-serif" font-size="72" letter-spacing="0" fill="#FFFFFF">
     <tspan font-weight="800">LEAL </tspan>
     <tspan font-weight="400">SYSTEMS</tspan>
   </text>

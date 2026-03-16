@@ -19,7 +19,12 @@ export function Navbar({ contactEmail, theme, onToggleTheme }: NavbarProps) {
     <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/85 backdrop-blur-xl dark:border-white/10 dark:bg-[#050A16]/85">
       <Container className="flex h-20 items-center justify-between gap-4">
         <Link to="/" aria-label="Leal Systems" className="inline-flex items-center" onClick={() => setMobileOpen(false)}>
-          <BrandLogo theme={theme} logoClassName="h-9 w-auto sm:h-10" />
+          <span className="sm:hidden">
+            <BrandLogo theme={theme} mode="mark" logoClassName="h-8 w-auto" />
+          </span>
+          <span className="hidden sm:inline-flex">
+            <BrandLogo theme={theme} logoClassName="h-10 w-auto lg:h-11" />
+          </span>
         </Link>
 
         <nav className="hidden lg:block" aria-label="Seções principais">
