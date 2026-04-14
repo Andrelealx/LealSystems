@@ -13,9 +13,9 @@ export const company = {
   name: 'Leal Systems',
   tagline: 'Tecnologia · Confiança · Inovação',
   description:
-    'Software house brasileira B2B especializada em produtos digitais prontos para uso e desenvolvimento sob encomenda para empresas de diversos segmentos.',
+    'Software house brasileira especializada em produtos digitais, sistemas sob encomenda e soluções com IA para empresas e gestão pública — do MVP ao produto em produção.',
   founded: '2021',
-  stack: ['React', 'Node.js', 'TypeScript', 'PostgreSQL', 'Prisma', 'Docker', 'Railway', 'Cloudflare'],
+  stack: ['React', 'Node.js', 'TypeScript', 'PostgreSQL', 'Python', 'Docker', 'Railway', 'OpenCV'],
 }
 
 export const navigation: NavItem[] = [
@@ -27,9 +27,9 @@ export const navigation: NavItem[] = [
 ]
 
 export const heroStats: StatItem[] = [
-  { value: '2 frentes', label: 'produtos próprios e desenvolvimento sob encomenda' },
-  { value: 'B2B', label: 'foco em operações, produtividade e escala empresarial' },
-  { value: 'End-to-end', label: 'descoberta, build, deploy, monitoramento e evolução contínua' },
+  { value: '13+', label: 'projetos entregues e em produção' },
+  { value: 'B2B & Gov', label: 'soluções para empresas, prefeituras e impacto social' },
+  { value: 'End-to-end', label: 'descoberta, build, deploy, IA e evolução contínua' },
 ]
 
 export const values: ValueItem[] = [
@@ -126,6 +126,93 @@ export const process: ProcessStep[] = [
 
 export const products: ProductItem[] = [
   {
+    name: 'RioFaz Tracker',
+    tagline: 'Rastreamento de coleta urbana em tempo real',
+    description:
+      'Plataforma de monitoramento de rotas de coleta de resíduos com mapa interativo, portal do cidadão e agendamento integrado via ViaCEP.',
+    highlights: [
+      'Rastreamento GPS ao vivo com atualização a cada 5s',
+      'Portal do cidadão com agendamento de coleta por bairro',
+      'Modos de visualização: mapa e satélite com geolocalização',
+    ],
+    stack: ['React', 'Leaflet', 'Node.js', 'ViaCEP API'],
+    segment: 'Gestão Pública',
+    result: 'Cidadãos acompanham rotas em tempo real e prefeitura reduz chamadas de reclamação por desinformação.',
+    link: 'https://snow-goose-667329.hostingersite.com',
+  },
+  {
+    name: 'ELO',
+    tagline: 'Sistema integrado para secretarias de segurança pública',
+    description:
+      'Plataforma 100% web para modernizar a gestão operacional de secretarias municipais: escalas, horas extras, ocorrências e relatórios em um único sistema.',
+    highlights: [
+      'Gestão de efetivo com escalas visuais e controle de SDR',
+      'Registro de ocorrências com protocolo automático',
+      'Dashboard executivo com KPIs e autenticação em dois fatores',
+    ],
+    stack: ['PHP', 'MySQL', 'JavaScript', 'Hostinger'],
+    segment: 'Segurança Pública',
+    result: 'Digitalização completa da operação de secretarias municipais com rastreabilidade e conformidade.',
+    link: 'https://saddlebrown-trout-771246.hostingersite.com/apresentacao.php',
+  },
+  {
+    name: 'GoVerde',
+    tagline: 'Portal do cidadão para serviços ambientais',
+    description:
+      'Portal digital para conectar cidadãos a serviços públicos ambientais: solicitações, acompanhamento de demandas e informações sobre sustentabilidade municipal.',
+    highlights: [
+      'Canal de solicitações ambientais com protocolo',
+      'Acompanhamento de demandas em tempo real',
+      'Painel administrativo para gestão de ocorrências',
+    ],
+    stack: ['React', 'Node.js', 'PostgreSQL', 'Railway'],
+    segment: 'Gestão Pública',
+    result: 'Centralização dos serviços ambientais municipais e redução do atendimento presencial.',
+    link: 'https://goverdeportal-production.up.railway.app',
+  },
+  {
+    name: 'Arca',
+    tagline: 'Mensageria corporativa com criptografia local',
+    description:
+      'Plataforma de comunicação no estilo WhatsApp com servidor autocriptografado instalado na infraestrutura do próprio cliente — zero dependência de nuvem de terceiros.',
+    highlights: [
+      'Criptografia ponta a ponta com chaves locais',
+      'Servidor autoconfigurável na infraestrutura do cliente',
+      'Interface familiar estilo chat com grupos e arquivos',
+    ],
+    stack: ['Node.js', 'WebSocket', 'TypeScript', 'Docker'],
+    segment: 'Comunicação Corporativa',
+    result: 'Empresas e órgãos públicos com soberania total sobre suas comunicações internas sem dependência de provedores externos.',
+  },
+  {
+    name: 'IA Financeira',
+    tagline: 'Análise e insights financeiros com inteligência artificial',
+    description:
+      'Sistema de IA para análise de dados financeiros, projeção de fluxo de caixa, identificação de anomalias e geração de relatórios automatizados para gestores.',
+    highlights: [
+      'Análise preditiva de fluxo de caixa',
+      'Detecção automática de anomalias e padrões',
+      'Relatórios executivos gerados por IA com linguagem natural',
+    ],
+    stack: ['Python', 'React', 'Node.js', 'PostgreSQL'],
+    segment: 'Finanças e IA',
+    result: 'Redução do tempo de análise financeira e antecipação de riscos operacionais com maior precisão.',
+  },
+  {
+    name: 'FacePass',
+    tagline: 'Controle de acesso por reconhecimento facial',
+    description:
+      'Sistema de IA para identificação e controle de entrada em eventos, festas e carnavais — reconhecimento em tempo real com gestão de lista de presença e alertas de segurança.',
+    highlights: [
+      'Reconhecimento facial em tempo real com câmeras comuns',
+      'Lista de presença automatizada e controle de reentrada',
+      'Alertas de segurança para pessoas em lista de restrição',
+    ],
+    stack: ['Python', 'OpenCV', 'React', 'Node.js', 'Docker'],
+    segment: 'Eventos e Segurança',
+    result: 'Controle de acesso ágil em eventos de grande público com rastreabilidade total de entrada e saída.',
+  },
+  {
     name: 'VitrineAuto',
     tagline: 'SaaS white-label para concessionárias',
     description:
@@ -138,6 +225,7 @@ export const products: ProductItem[] = [
     stack: ['React', 'Node.js', 'PostgreSQL'],
     segment: 'Automotivo',
     result: 'Padronização da operação digital e aumento da qualidade dos leads comerciais.',
+    link: 'https://autovitrine.com',
   },
   {
     name: 'ExploreGuapi',
@@ -150,22 +238,83 @@ export const products: ProductItem[] = [
       'Base de conteúdo preparada para expansão regional',
     ],
     stack: ['Next.js 14', 'React', 'Leaflet'],
-    segment: 'Turismo e Economia Criativa',
+    segment: 'Turismo',
     result: 'Melhor experiência do visitante e centralização da informação turística em um único canal.',
   },
   {
     name: 'Única Chamados',
-    tagline: 'Sistema interno de tickets e solicitações',
+    tagline: 'Sistema de tickets para gestão pública municipal',
     description:
-      'Gestão de solicitações internas com histórico, prioridades, SLA e acompanhamento por departamento.',
+      'Plataforma de chamados para prefeituras com 24+ departamentos, triagem por urgência, histórico completo e painel gerencial para acompanhamento da equipe.',
     highlights: [
-      'Triagem inteligente por área',
-      'Indicadores de atendimento e gargalos',
-      'Painel gerencial para times e liderança',
+      '24+ departamentos municipais integrados em um único sistema',
+      'Triagem por urgência com anexo de arquivos',
+      'Painel de consulta de tickets para cidadãos',
     ],
     stack: ['TypeScript', 'Node.js', 'PostgreSQL'],
-    segment: 'Operações Corporativas',
-    result: 'Redução de tempo de resposta e maior visibilidade de backlog para gestão operacional.',
+    segment: 'Gestão Pública',
+    result: 'Digitalização do atendimento municipal com rastreabilidade ponta a ponta e redução de tempo de resposta.',
+    link: 'https://suporteunica.com',
+  },
+  {
+    name: 'ControlaFácil',
+    tagline: 'Gestão documental para prefeituras',
+    description:
+      'Sistema web de organização e controle de documentos municipais desenvolvido para a Prefeitura de Guapimirim — centraliza, rastreia e facilita o acesso à documentação administrativa.',
+    highlights: [
+      'Controle centralizado de documentos por setor',
+      'Rastreabilidade e histórico de alterações',
+      'Acesso via navegador sem instalação',
+    ],
+    stack: ['React', 'Vite', 'Node.js'],
+    segment: 'Gestão Pública',
+    result: 'Digitalização da gestão documental da Prefeitura de Guapimirim com controle e acesso facilitado.',
+    link: 'https://controlafacil.cloud',
+  },
+  {
+    name: 'GM Personal',
+    tagline: 'Plataforma educacional de gestão para professores e alunos',
+    description:
+      'Sistema EdTech com PWA para gestão educacional: acesso por alunos e professores, controle de turmas, acompanhamento de progresso e painel administrativo institucional.',
+    highlights: [
+      'PWA instalável com suporte offline',
+      'Acesso seguro por aluno, professor e gestor',
+      'Interface responsiva com design de alta conversão',
+    ],
+    stack: ['React', 'PWA', 'Node.js', 'Hostinger'],
+    segment: 'Educação',
+    result: 'Plataforma EdTech ativa com acesso controlado para estudantes e professores de instituições parceiras.',
+    link: 'https://gmpersonal.com.br',
+  },
+  {
+    name: 'Golden Express',
+    tagline: 'Site institucional para empresa de segurança e facilities',
+    description:
+      'Presença digital completa para o Grupo Golden Express, empresa de vigilância patrimonial e facilities com mais de 150 clientes no Rio de Janeiro.',
+    highlights: [
+      'Apresentação de serviços com foco em conversão',
+      'Design responsivo orientado à geração de leads',
+      'Integração com WhatsApp e canais de contato direto',
+    ],
+    stack: ['HTML', 'CSS', 'JavaScript', 'Hostinger'],
+    segment: 'Serviços B2B',
+    result: 'Empresa com 150+ clientes ganhou presença digital profissional e canal direto de captação de novos contratos.',
+    link: 'https://grupogoldenexpress.com.br',
+  },
+  {
+    name: 'Força do Saber',
+    tagline: 'Plataforma de impacto social educacional',
+    description:
+      'Site institucional e plataforma digital para o Projeto Força do Saber, iniciativa social em Guapimirim/RJ focada em acesso à educação, bolsas e orientação para estudantes em vulnerabilidade.',
+    highlights: [
+      '248 bolsas conquistadas pelos alunos apoiados',
+      'Canal de parcerias com organizações e apoiadores',
+      'Histórias de sucesso e métricas de impacto em destaque',
+    ],
+    stack: ['React', 'Node.js', 'Hostinger'],
+    segment: 'Impacto Social',
+    result: 'Projeto com 248 bolsas conquistadas e 22 formados ganhou visibilidade digital e canal de captação de parceiros.',
+    link: 'https://xn--foradosaber-o9a.com.br',
   },
 ]
 
@@ -217,10 +366,14 @@ export const faqs: FaqItem[] = [
 ]
 
 export const industries = [
-  'Varejo e e-commerce',
+  'Gestão Pública Municipal',
+  'Segurança Pública',
+  'Educação e EdTech',
+  'Impacto Social',
   'Automotivo',
+  'Turismo e Hospitalidade',
+  'Comunicação Corporativa',
+  'Eventos e Entretenimento',
+  'Finanças e IA',
   'Serviços B2B',
-  'Educação corporativa',
-  'Turismo e hospitalidade',
-  'Operações internas e backoffice',
 ]

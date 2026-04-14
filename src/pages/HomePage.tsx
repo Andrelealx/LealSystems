@@ -43,18 +43,32 @@ export function HomePage() {
               </p>
 
               <div className="mt-6 grid gap-4 sm:grid-cols-2">
-                <article className="rounded-2xl border border-slate-200 bg-slate-50 p-4 dark:border-white/10 dark:bg-slate-900/40">
-                  <p className="font-body text-xs font-semibold uppercase tracking-[0.16em] text-slate-500 dark:text-slate-400">
-                    Produtos prontos
-                  </p>
+                <article className="rounded-2xl border border-brand-100 bg-gradient-to-br from-brand-50 to-white p-4 dark:border-brand-500/20 dark:from-brand-900/30 dark:to-transparent">
+                  <div className="flex items-center gap-2">
+                    <span className="flex h-7 w-7 items-center justify-center rounded-xl bg-brand-600 text-white" aria-hidden="true">
+                      <svg viewBox="0 0 16 16" className="h-3.5 w-3.5" fill="none">
+                        <path d="M8 2L10 6l4.5.65-3.25 3.17.77 4.47L8 14l-4.02 2.29.77-4.47L1.5 6.65 6 6z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" />
+                      </svg>
+                    </span>
+                    <p className="font-body text-xs font-semibold uppercase tracking-[0.16em] text-brand-700 dark:text-brand-300">
+                      Produtos prontos
+                    </p>
+                  </div>
                   <p className="mt-2 font-body text-sm text-slate-700 dark:text-slate-200">
                     SaaS com implantação rápida para acelerar operação e ganho de eficiência.
                   </p>
                 </article>
                 <article className="rounded-2xl border border-slate-200 bg-slate-50 p-4 dark:border-white/10 dark:bg-slate-900/40">
-                  <p className="font-body text-xs font-semibold uppercase tracking-[0.16em] text-slate-500 dark:text-slate-400">
-                    Sob encomenda
-                  </p>
+                  <div className="flex items-center gap-2">
+                    <span className="flex h-7 w-7 items-center justify-center rounded-xl bg-slate-700 text-white dark:bg-slate-600" aria-hidden="true">
+                      <svg viewBox="0 0 16 16" className="h-3.5 w-3.5" fill="none">
+                        <path d="M2 14V6l6-4 6 4v8M6 14v-4h4v4" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </span>
+                    <p className="font-body text-xs font-semibold uppercase tracking-[0.16em] text-slate-500 dark:text-slate-400">
+                      Sob encomenda
+                    </p>
+                  </div>
                   <p className="mt-2 font-body text-sm text-slate-700 dark:text-slate-200">
                     Sistemas customizados para processos críticos e necessidades específicas de negócio.
                   </p>
@@ -97,7 +111,7 @@ export function HomePage() {
       </section>
 
       <TrustStrip />
-      <ServicesGrid limit={4} />
+      <ServicesGrid />
       <ProcessTimeline />
       <PortfolioGrid />
       <TestimonialsGrid />

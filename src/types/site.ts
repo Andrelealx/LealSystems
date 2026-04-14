@@ -31,6 +31,7 @@ export interface ProductItem {
   stack: string[]
   segment: string
   result: string
+  link?: string
 }
 
 export interface TestimonialItem {
