@@ -32,6 +32,7 @@ export interface ProductItem {
   segment: string
   result: string
   link?: string
+  screenshot?: string
 }
 
 export interface TestimonialItem {

@@ -139,6 +139,7 @@ export const products: ProductItem[] = [
     segment: 'Gestão Pública',
     result: 'Cidadãos acompanham rotas em tempo real e prefeitura reduz chamadas de reclamação por desinformação.',
     link: 'https://snow-goose-667329.hostingersite.com',
+    screenshot: '/screenshots/riofaz-tracker.jpg',
   },
   {
     name: 'ELO',
@@ -154,6 +155,7 @@ export const products: ProductItem[] = [
     segment: 'Segurança Pública',
     result: 'Digitalização completa da operação de secretarias municipais com rastreabilidade e conformidade.',
     link: 'https://saddlebrown-trout-771246.hostingersite.com/apresentacao.php',
+    screenshot: '/screenshots/elo.jpg',
   },
   {
     name: 'GoVerde',
@@ -169,6 +171,7 @@ export const products: ProductItem[] = [
     segment: 'Gestão Pública',
     result: 'Centralização dos serviços ambientais municipais e redução do atendimento presencial.',
     link: 'https://goverdeportal-production.up.railway.app',
+    screenshot: '/screenshots/goverde.jpg',
   },
   {
     name: 'Arca',
@@ -255,6 +258,7 @@ export const products: ProductItem[] = [
     segment: 'Gestão Pública',
     result: 'Digitalização do atendimento municipal com rastreabilidade ponta a ponta e redução de tempo de resposta.',
     link: 'https://suporteunica.com',
+    screenshot: '/screenshots/unica-chamados.jpg',
   },
   {
     name: 'ControlaFácil',
@@ -270,6 +274,7 @@ export const products: ProductItem[] = [
     segment: 'Gestão Pública',
     result: 'Digitalização da gestão documental da Prefeitura de Guapimirim com controle e acesso facilitado.',
     link: 'https://controlafacil.cloud',
+    screenshot: '/screenshots/controla-facil.jpg',
   },
   {
     name: 'GM Personal',
@@ -285,6 +290,7 @@ export const products: ProductItem[] = [
     segment: 'Educação',
     result: 'Plataforma EdTech ativa com acesso controlado para estudantes e professores de instituições parceiras.',
     link: 'https://gmpersonal.com.br',
+    screenshot: '/screenshots/gm-personal.jpg',
   },
   {
     name: 'Golden Express',
@@ -300,6 +306,7 @@ export const products: ProductItem[] = [
     segment: 'Serviços B2B',
     result: 'Empresa com 150+ clientes ganhou presença digital profissional e canal direto de captação de novos contratos.',
     link: 'https://grupogoldenexpress.com.br',
+    screenshot: '/screenshots/golden-express.jpg',
   },
   {
     name: 'Força do Saber',
@@ -315,6 +322,7 @@ export const products: ProductItem[] = [
     segment: 'Impacto Social',
     result: 'Projeto com 248 bolsas conquistadas e 22 formados ganhou visibilidade digital e canal de captação de parceiros.',
     link: 'https://xn--foradosaber-o9a.com.br',
+    screenshot: '/screenshots/forca-do-saber.jpg',
   },
 ]
 
