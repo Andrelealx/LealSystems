@@ -214,6 +214,8 @@ export const products: ProductItem[] = [
     stack: ['Python', 'OpenCV', 'React', 'Node.js', 'Docker'],
     segment: 'Eventos e Segurança',
     result: 'Controle de acesso ágil em eventos de grande público com rastreabilidade total de entrada e saída.',
+    link: 'https://tess-face-security.up.railway.app',
+    screenshot: '/screenshots/facepass.jpg',
   },
   {
     name: 'VitrineAuto',
